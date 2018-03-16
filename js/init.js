@@ -1,11 +1,23 @@
 var app = {
     // Application Constructor
     initialize: function() {
-    	    alert("111");
-    	    //window.location.href="success.html"; //这个是ok的
-    	    cordova.InAppBrowser.open('success.html', '_blank', 'location=no,toolbar=yes,toolbarposition=top,closebuttoncaption=关闭');
+    	    //alert("111");
+    	    //window.location.href="home.html"; //这个是ok的
+    	    //$.mobile.changePage ('pageSwitch.html')
+    	    //3秒后自动跳转
+    	    setTimeout(function () {
+    	    	   window.location.href="home.html"; //这个是ok的
+           //要处理的语句
+        },3000);
+    	    
+    	    
+    	    
+    	    
+    	    //cordova.InAppBrowser.open('success.html', '_blank', 'location=no,toolbar=yes,toolbarposition=top,closebuttoncaption=关闭');
         //document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-        alert("222");
+        //alert("222");
+        
+        
     },
 
     // deviceready Event Handler
@@ -33,3 +45,5 @@ var app = {
 };
 
 app.initialize();  //初始化
+
+
