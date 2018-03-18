@@ -5,10 +5,10 @@ var app = {
     	    //window.location.href="home.html"; //这个是ok的
     	    //$.mobile.changePage ('pageSwitch.html')
     	    //3秒后自动跳转
-    	    setTimeout(function () {
+    	    //setTimeout(function () {
     	    	   window.location.href="home.html"; //这个是ok的
            //要处理的语句
-        },3000);
+        //},3000);
     	    
     	    
     	    

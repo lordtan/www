@@ -1,4 +1,19 @@
 $(document).ready(function(){
+	
+	/**
+	 * js调用Android后台类 
+	 */
+	$("#testInvoke").click(function(){
+		 alert("按钮被点击"); 
+         cordova.exec(success, fail, "jsTest", "speak", ["你好啊佩奇"]);
+    });
+    var success = function(message){
+            alert("success = "+message);
+         };
+    var fail = function(message){
+            alert("fail = "+message);
+         };
+	
 	//监听信息按钮点击
 	$("#messageHref").bind("click",function(){
 		  $("#pageContent").empty();
